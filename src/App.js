@@ -1,9 +1,9 @@
-import { Main } from './pages/main'
+import { MainPage } from './pages/main'
 
 function App() {
    return (
       <div className="App">
-         <Main />
+         <MainPage />
       </div>
    )
 }
