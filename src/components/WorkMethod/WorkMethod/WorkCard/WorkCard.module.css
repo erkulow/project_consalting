@@ -1,0 +1,37 @@
+.work__container {
+   background: #ffffff;
+   border: 1px solid #0a3161;
+   border-radius: 16px;
+   padding: 20px 10px 40px;
+
+   white-space: pre-line;
+   flex-basis: 28%;
+}
+
+.work__icon {
+   margin-top: 20px;
+}
+
+.work__title {
+   margin: 18px 0;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   color: #333333;
+}
+
+.work__subtitle {
+   font-family: 'Poppins';
+   font-size: 16px;
+   line-height: 150%;
+   color: #333333;
+   width: 90%;
+   display: block;
+   margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+   .work__container {
+      flex: 100%;
+   }
+}

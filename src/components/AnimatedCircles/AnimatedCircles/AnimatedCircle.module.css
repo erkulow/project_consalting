@@ -1,0 +1,119 @@
+.container {
+   display: flex;
+   position: relative;
+   width: fit-content;
+   padding: 12px 17px 22px 22px;
+}
+.leftArrow {
+   position: absolute;
+   transform: rotate(124deg);
+   left: -1.8rem;
+   top: 1.5rem;
+}
+.leftArrow.blue > path:first-of-type {
+   stroke: #b31942;
+}
+.leftArrow.blue stop {
+   stop-color: #b31942;
+}
+.leftArrow.blue > path:nth-child(2) {
+   fill: #b31942;
+}
+
+.leftArrow.light_blue stop {
+   stop-color: #b31942;
+}
+.leftArrow.light_blue > path:first-of-type {
+   stroke: #b31942;
+}
+
+.leftArrow.light_blue > path:nth-child(2) {
+   fill: #b31942;
+}
+
+.leftArrow.green > path:nth-child(2) {
+   fill: #b31942;
+}
+
+.rightArrow {
+   position: absolute;
+   transform: rotate(-125deg);
+   right: -2rem;
+   top: 1.5rem;
+}
+.rightArrow.blue > path:first-of-type {
+   stroke: #b31942;
+}
+
+.rightArrow.blue > path:nth-child(2) {
+   fill: #b31942;
+}
+
+.rightArrow.light_blue > path:first-of-type {
+   stroke: #b31942;
+}
+
+.rightArrow.light_blue > path:nth-child(2) {
+   fill: #b31942;
+}
+
+.rightArrow.green > path:nth-child(2) {
+   fill: #b31942;
+}
+
+.bottomArrow {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0;
+}
+.bottomArrow.blue > path:first-of-type {
+   stroke: #b31942;
+   stop-color: #b31942;
+}
+
+.bottomArrow.blue > path:nth-child(2) {
+   fill: #b31942;
+}
+
+.bottomArrow.light_blue > path:first-of-type {
+   stroke: #b31942;
+   stop-color: #b31942;
+}
+
+.bottomArrow.light_blue > path:nth-child(2) {
+   fill: #b31942;
+}
+
+.bottomArrow.green > path:nth-child(2) {
+   fill: #b31942;
+}
+
+.circle {
+   width: 140px;
+   height: 140px;
+   border-radius: 50%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #b31942;
+}
+.title {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-47%, -50%);
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 12.8333px;
+   line-height: 17px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #ffffff;
+   text-align: center;
+   width: 60%;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}

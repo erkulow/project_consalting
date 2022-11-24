@@ -1,0 +1,72 @@
+.tabsContainer {
+   width: 80%;
+   max-width: 1440px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(9, minmax(100px, 1fr));
+   transform: rotate(0.12deg);
+   margin-bottom: 30px;
+   overflow-x: scroll;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+   position: relative;
+}
+.tabName::after {
+   content: '';
+   display: block;
+   border-top: 1px solid #d1d1d1;
+   position: absolute;
+   width: 100%;
+   bottom: 1px;
+   z-index: 1;
+}
+.tabsContainer::-webkit-scrollbar {
+   display: none;
+}
+.tabName {
+   font-family: 'Poppins';
+   font-weight: 400;
+   font-size: 18px;
+   text-align: center;
+   color: #333333;
+   cursor: pointer;
+   width: auto;
+   position: relative;
+   box-sizing: content-box;
+   padding: 32px 0;
+}
+.tabName.active::after {
+   transition: border 0.1s ease-in-out;
+   content: '';
+   display: block;
+   border-top: 3px solid #0583ff;
+   border-radius: 5px;
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   z-index: 2;
+}
+.tabItemsContainer {
+   width: 90%;
+   max-width: 1440px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(0, 172px));
+   grid-template-rows: 140px;
+   justify-content: center;
+}
+
+@media screen and (max-width: 468px) {
+   .tabsContainer {
+      width: 100%;
+   }
+   .tabName {
+      padding: 16px 0;
+      font-size: 16px;
+   }
+   .tabItemsContainer {
+      grid-template-columns: repeat(auto-fill, minmax(0, 82px));
+      grid-template-rows: 67px;
+      width: 96%;
+   }
+}
