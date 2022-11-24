@@ -1,0 +1,75 @@
+.skill__card {
+   background: #dcfff0;
+   border: 1px solid rgba(13, 144, 86, 0.16);
+   border-radius: 16px;
+   padding: 30px;
+   max-width: 400px;
+   flex: 28%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+.skills__title-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 35px;
+}
+.skill__card.blue {
+   background: #bcd8ff;
+}
+
+.skill__card.light_blue {
+   background: #e0ebfe;
+}
+
+.skills__skill-description h3 {
+   font-family: 'Poppins';
+   font-size: 18px;
+   line-height: 25px;
+   color: #333333;
+   width: 80%;
+   height: 50px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.skills__skill-description p {
+   font-family: 'Poppins';
+
+   margin-top: 18px;
+   margin-bottom: 28px;
+   font-size: 16px;
+   line-height: 140%;
+   color: #394559;
+}
+
+.skills__skill-skills li {
+   list-style: none;
+   font-family: 'Poppins';
+   line-height: 24px;
+
+   text-align: left;
+
+   color: #394559;
+
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.skills__skill-skills {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   align-content: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+   .skills__skill-description h3 {
+      text-align: start;
+   }
+   .skills__skill-description p {
+      text-align: start;
+   }
+}

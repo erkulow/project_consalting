@@ -1,5 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Number } from '../../number/Number'
+import { TabItem } from '../../Technologies/TabItem'
+import WorkMethod from '../../WorkMethod/WorkMethod/WorkMethod'
+import WorkSkills from '../../WorkSkills/WorkSkills'
 import { Contact } from '../contact'
 
 export const Main = () => {
@@ -13,25 +17,18 @@ export const Main = () => {
                   MOLODECAlmaz MOLODECAlmaz <br /> MOLODEC
                </p>
             </Title>
-
-            <WrapperCards>
-               <h1>What we do?</h1>
-            </WrapperCards>
-
+            <WorkSkills />
             <WrapperTestimonials>
                <h1>Testimonials Our students</h1>
+               <Number />
             </WrapperTestimonials>
-
-            <WrapperOFFER>
-               <h1>WHAT DO WE OFFER</h1>
-            </WrapperOFFER>
-
-            <WrapperUniver>
-               <h1>
-                  We have helped our students get into <br /> the best
-                  universities in the world.
-               </h1>
-            </WrapperUniver>
+            <h1>WHAT DO WE OFFER</h1>
+            <WorkMethod />
+            <h1>
+               We have helped our students get into <br /> the best universities
+               in the world.
+            </h1>
+            <TabItem />
             <Contact />
          </InnerContainer>
       </Container>
@@ -49,6 +46,7 @@ const InnerContainer = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
+   position: relative;
 `
 const Title = styled.div`
    text-align: center;
@@ -69,20 +67,7 @@ const Title = styled.div`
       margin-bottom: 35px;
    }
 `
-const WrapperCards = styled.div`
-   margin-top: 140px;
-   width: 100%;
-   height: 200px;
-   h1 {
-      text-align: center;
-      font-family: 'Space Grotesk';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 38px;
-      line-height: 120%;
-      margin-bottom: 30px;
-   }
-`
+
 const WrapperTestimonials = styled.div`
    h1 {
       text-align: center;
@@ -94,27 +79,16 @@ const WrapperTestimonials = styled.div`
       margin-bottom: 40px;
    }
 `
-const WrapperOFFER = styled.div`
-   h1 {
-      margin-top: 20px;
-      text-align: center;
-      font-family: 'Space Grotesk';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 38px;
-      line-height: 120%;
-      margin-bottom: 50px;
-   }
-`
-const WrapperUniver = styled.div`
-   h1 {
-      margin-top: 20px;
-      text-align: center;
-      font-family: 'Space Grotesk';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 38px;
-      line-height: 120%;
-      margin-bottom: 50px;
-   }
-`
+// const WrapperOFFER = styled.div`
+//    width: 100%;
+//    h1 {
+//       margin-top: 20px;
+//       text-align: center;
+//       font-family: 'Space Grotesk';
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 38px;
+//       line-height: 120%;
+//       margin-bottom: 50px;
+//    }
+// `

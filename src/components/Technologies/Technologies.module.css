@@ -1,0 +1,25 @@
+.technologies__container {
+   display: flex;
+   flex-direction: column;
+   row-gap: 56px;
+}
+.technologies__title {
+   text-align: center;
+   font-family: 'Space Grotesk';
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 120%;
+   text-align: center;
+   color: #333333;
+}
+
+@media screen and (max-width: 468px) {
+   .technologies__container {
+      row-gap: 16px;
+   }
+   .technologies__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+   }
+}

@@ -1,0 +1,38 @@
+.container {
+   flex-basis: 90%;
+}
+.circles__container {
+   border: 2px solid #4b99c5;
+   width: 100%;
+   border-radius: 118.5px;
+   display: inline-flex;
+   list-style-type: none;
+   gap: 7em;
+   --circle-radius: 8px;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.circles__container li {
+   flex: 20%;
+   color: #999;
+   position: relative;
+}
+
+.circles__container li::before {
+   background-color: inherit;
+   border-radius: 50%;
+   content: '';
+   position: absolute;
+   height: calc(2 * var(--circle-radius));
+   width: calc(2 * var(--circle-radius));
+   left: 50%;
+   transform: translate(-50%, -50%);
+   transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 900px) {
+   .circles__container {
+      display: none;
+   }
+}

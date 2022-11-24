@@ -1,0 +1,33 @@
+.skills__container {
+   width: 90%;
+   margin: 0 auto;
+   padding-bottom: 140px;
+}
+
+.skills__container h2 {
+   margin: 68px 0;
+   margin-top: 0;
+   text-align: center;
+}
+h1 {
+   text-align: center;
+   font-family: 'Space Grotesk';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 120%;
+   margin-bottom: 30px;
+}
+
+.skills {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   justify-content: center;
+}
+
+@media screen and (max-width: 468px) {
+   .skills__container {
+      padding-bottom: 80px;
+   }
+}
