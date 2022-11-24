@@ -1,6 +1,12 @@
 .skill__card {
-   background: #dcfff0;
-   border: 1px solid rgba(13, 144, 86, 0.16);
+   /* background: rgb(10, 49, 97); */
+   /* background: linear-gradient(
+      180deg,
+      rgba(10, 49, 97, 1) 0%,
+      rgba(12, 69, 139, 0.7819502801120448) 100%
+   ); */
+   border: 1.5px solid #0a3161;
+   /* border: 1px solid rgba(13, 144, 86, 0.16); */
    border-radius: 16px;
    padding: 30px;
    max-width: 400px;
@@ -8,6 +14,7 @@
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
+   color: #0a3161;
 }
 .skills__title-container {
    display: flex;
@@ -16,18 +23,30 @@
    margin-bottom: 35px;
 }
 .skill__card.blue {
-   background: #bcd8ff;
+   /* background: rgb(10, 49, 97); */
+   /* background: linear-gradient(
+      180deg,
+      rgba(10, 49, 97, 1) 0%,
+      rgba(12, 69, 139, 0.7819502801120448) 100%
+   ); */
+   border: 1.5px solid #0a3161;
 }
 
 .skill__card.light_blue {
-   background: #e0ebfe;
+   /* background: rgb(10, 49, 97); */
+   /* background: linear-gradient(
+      180deg,
+      rgba(10, 49, 97, 1) 0%,
+      rgba(12, 69, 139, 0.7819502801120448) 100%
+   ); */
+   border: 1.5px solid #0a3161;
 }
 
 .skills__skill-description h3 {
    font-family: 'Poppins';
    font-size: 18px;
    line-height: 25px;
-   color: #333333;
+   color: #0a3161;
    width: 80%;
    height: 50px;
    overflow: hidden;
@@ -36,12 +55,12 @@
 
 .skills__skill-description p {
    font-family: 'Poppins';
+   color: #0a3161;
 
    margin-top: 18px;
    margin-bottom: 28px;
    font-size: 16px;
    line-height: 140%;
-   color: #394559;
 }
 
 .skills__skill-skills li {
@@ -51,7 +70,7 @@
 
    text-align: left;
 
-   color: #394559;
+   color: #0a3161;
 
    display: flex;
    align-items: center;

@@ -1,0 +1,232 @@
+.statisticsSection {
+   padding: 0;
+   width: 100%;
+   max-width: 1250px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 130px;
+}
+.bgImage {
+   max-width: 1240px;
+   position: absolute;
+   z-index: -1;
+   opacity: 0.2;
+}
+.numbers {
+   font-size: 54px;
+   font-weight: 600;
+   line-height: 75.6px;
+   color: #003a84;
+}
+.countUpbox {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.countUpbox span {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 45px;
+   line-height: 68px;
+   color: #0a3161;
+}
+.countUpbox p {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   color: #333333;
+}
+.numbers::after {
+   content: '+';
+   position: absolute;
+   bottom: 80px;
+}
+.squad {
+   border-top: 1px solid #003a84;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 21.11px;
+   color: #969696;
+}
+.statistics {
+   position: relative;
+   width: 1024px;
+   display: flex;
+   justify-content: space-between;
+   padding: 11px 18px 27px 0;
+   margin-left: 108px;
+   margin-bottom: 60px;
+}
+.btnPosition {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.button {
+   padding: 16px 86px;
+}
+@media (max-width: 1280px) {
+   .section {
+      width: 82%;
+      max-width: 1280px;
+      margin: 0 auto;
+   }
+   .statistics {
+      width: inherit;
+      margin-left: 28px;
+      margin-bottom: 60px;
+   }
+   .bgImage {
+      bottom: -0px;
+   }
+}
+@media (max-width: 991px) {
+   .section {
+      width: 90%;
+      max-width: 100%;
+      margin: 0 auto;
+   }
+   .bgImage {
+      bottom: 0px;
+   }
+}
+@media (max-width: 450px) {
+   .container {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+   }
+   .section {
+      width: 100%;
+   }
+   .bgImage {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      opacity: 0.1;
+      width: 100%;
+      height: auto;
+      margin: 0;
+   }
+   .containerAboutUs {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0;
+   }
+   .displaySection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .scrollbarText {
+      margin: 0;
+      padding: 0;
+      width: 90%;
+      height: 419px;
+   }
+   .aboutTitles {
+      font-size: 26px;
+      margin-left: 20px;
+      margin-top: 120px;
+   }
+   .textAboutUs {
+      margin-right: 0;
+   }
+   .scrollbarText::-webkit-scrollbar {
+      width: 6px;
+   }
+   .img {
+      margin: 0;
+      width: 90%;
+      text-align: start;
+      height: 300px;
+   }
+   .img span {
+      min-height: 100%;
+      min-width: 100%;
+   }
+   .statisticsSection {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      margin-right: 0;
+      position: relative;
+   }
+   .numbers {
+      font-size: 54px;
+      font-weight: 600;
+      line-height: 75.6px;
+      color: #003a84;
+   }
+   .numbers::after {
+      content: '+';
+      position: relative;
+      top: -25px;
+   }
+   .countUpbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   .statisticsSection {
+      width: 100%;
+      margin: 0;
+   }
+   .numbers {
+      font-size: 36px;
+      line-height: 50.4px;
+      margin-top: 50px;
+   }
+   .numbers::after {
+      content: '+';
+      position: relative;
+   }
+   .squad {
+      width: 120px;
+      font-size: 16px;
+      line-height: 18.77px;
+   }
+   .statistics {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+   }
+   .countUpbox {
+      flex: 40%;
+      display: flex;
+   }
+   .btnPosition {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
+      margin-left: 0;
+      margin-right: 0;
+   }
+   .button {
+      padding: 16px 27%;
+      white-space: nowrap;
+   }
+   .aboutTitlesTwo {
+      margin: 100px 0 20px 20px;
+      padding: 0;
+   }
+   .button:hover {
+      box-shadow: 0px 6px 18px rgba(31, 110, 212, 0.42);
+   }
+}

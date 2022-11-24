@@ -11,28 +11,28 @@
    top: 1.5rem;
 }
 .leftArrow.blue > path:first-of-type {
-   stroke: #0155bf;
+   stroke: #b31942;
 }
 .leftArrow.blue stop {
-   stop-color: #0257bf;
+   stop-color: #b31942;
 }
 .leftArrow.blue > path:nth-child(2) {
-   fill: #0486bf;
+   fill: #b31942;
 }
 
 .leftArrow.light_blue stop {
-   stop-color: #277af5;
+   stop-color: #b31942;
 }
 .leftArrow.light_blue > path:first-of-type {
-   stroke: #277af5;
+   stroke: #b31942;
 }
 
 .leftArrow.light_blue > path:nth-child(2) {
-   fill: #277af5;
+   fill: #b31942;
 }
 
 .leftArrow.green > path:nth-child(2) {
-   fill: #0b8650;
+   fill: #b31942;
 }
 
 .rightArrow {
@@ -42,23 +42,23 @@
    top: 1.5rem;
 }
 .rightArrow.blue > path:first-of-type {
-   stroke: #0155bf;
+   stroke: #b31942;
 }
 
 .rightArrow.blue > path:nth-child(2) {
-   fill: #0486bf;
+   fill: #b31942;
 }
 
 .rightArrow.light_blue > path:first-of-type {
-   stroke: #277af5;
+   stroke: #b31942;
 }
 
 .rightArrow.light_blue > path:nth-child(2) {
-   fill: #277af5;
+   fill: #b31942;
 }
 
 .rightArrow.green > path:nth-child(2) {
-   fill: #0b8650;
+   fill: #b31942;
 }
 
 .bottomArrow {
@@ -68,25 +68,25 @@
    bottom: 0;
 }
 .bottomArrow.blue > path:first-of-type {
-   stroke: #0155bf;
-   stop-color: #0151bf;
+   stroke: #b31942;
+   stop-color: #b31942;
 }
 
 .bottomArrow.blue > path:nth-child(2) {
-   fill: #0486bf;
+   fill: #b31942;
 }
 
 .bottomArrow.light_blue > path:first-of-type {
-   stroke: #277af5;
-   stop-color: #277af5;
+   stroke: #b31942;
+   stop-color: #b31942;
 }
 
 .bottomArrow.light_blue > path:nth-child(2) {
-   fill: #277af5;
+   fill: #b31942;
 }
 
 .bottomArrow.green > path:nth-child(2) {
-   fill: #0b8650;
+   fill: #b31942;
 }
 
 .circle {
@@ -97,36 +97,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-}
-.circle.green {
-   background: linear-gradient(
-      64.02deg,
-      #0b8650 17.2%,
-      #0b8650 31.29%,
-      #0d9257 44.16%,
-      #06a760 72.26%,
-      #10ba68 92.8%
-   );
-}
-.circle.blue {
-   background: linear-gradient(
-      64.02deg,
-      #0151bf 35.71%,
-      #0154bf 40.04%,
-      #026ebf 61.69%,
-      #037abf 71.54%,
-      #048ebf 92.8%
-   );
-}
-.circle.light_blue {
-   background: linear-gradient(
-      64.02deg,
-      #257cfc 17.2%,
-      #257cfc 43.97%,
-      #3282f8 57.6%,
-      #5296fa 78.07%,
-      #5296fa 92.8%
-   );
+   background-color: #b31942;
 }
 .title {
    position: absolute;

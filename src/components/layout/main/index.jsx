@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Number } from '../../number/Number'
+import { Satistics } from '../../satistics/Satistics'
 import { TabItem } from '../../Technologies/TabItem'
 import WorkMethod from '../../WorkMethod/WorkMethod/WorkMethod'
 import WorkSkills from '../../WorkSkills/WorkSkills'
@@ -17,10 +17,10 @@ export const Main = () => {
                   MOLODECAlmaz MOLODECAlmaz <br /> MOLODEC
                </p>
             </Title>
+            <Satistics />
             <WorkSkills />
             <WrapperTestimonials>
                <h1>Testimonials Our students</h1>
-               <Number />
             </WrapperTestimonials>
             <h1>WHAT DO WE OFFER</h1>
             <WorkMethod />
