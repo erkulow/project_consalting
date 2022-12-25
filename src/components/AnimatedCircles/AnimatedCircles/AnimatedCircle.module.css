@@ -11,28 +11,28 @@
    top: 1.5rem;
 }
 .leftArrow.blue > path:first-of-type {
-   stroke: #b31942;
+   stroke: #f49820;
 }
 .leftArrow.blue stop {
-   stop-color: #b31942;
+   stop-color: #f49820;
 }
 .leftArrow.blue > path:nth-child(2) {
-   fill: #b31942;
+   fill: #f49820;
 }
 
 .leftArrow.light_blue stop {
-   stop-color: #b31942;
+   stop-color: #f49820;
 }
 .leftArrow.light_blue > path:first-of-type {
-   stroke: #b31942;
+   stroke: #f49820;
 }
 
 .leftArrow.light_blue > path:nth-child(2) {
-   fill: #b31942;
+   fill: #f49820;
 }
 
 .leftArrow.green > path:nth-child(2) {
-   fill: #b31942;
+   fill: #f49820;
 }
 
 .rightArrow {
@@ -42,23 +42,23 @@
    top: 1.5rem;
 }
 .rightArrow.blue > path:first-of-type {
-   stroke: #b31942;
+   stroke: #f49820;
 }
 
 .rightArrow.blue > path:nth-child(2) {
-   fill: #b31942;
+   fill: #f49820;
 }
 
 .rightArrow.light_blue > path:first-of-type {
-   stroke: #b31942;
+   stroke: #f49820;
 }
 
 .rightArrow.light_blue > path:nth-child(2) {
-   fill: #b31942;
+   fill: #f49820;
 }
 
 .rightArrow.green > path:nth-child(2) {
-   fill: #b31942;
+   fill: #f49820;
 }
 
 .bottomArrow {
@@ -68,25 +68,25 @@
    bottom: 0;
 }
 .bottomArrow.blue > path:first-of-type {
-   stroke: #b31942;
-   stop-color: #b31942;
+   stroke: #f49820;
+   stop-color: #f49820;
 }
 
 .bottomArrow.blue > path:nth-child(2) {
-   fill: #b31942;
+   fill: #f49820;
 }
 
 .bottomArrow.light_blue > path:first-of-type {
-   stroke: #b31942;
-   stop-color: #b31942;
+   stroke: #f49820;
+   stop-color: #f49820;
 }
 
 .bottomArrow.light_blue > path:nth-child(2) {
-   fill: #b31942;
+   fill: #f49820;
 }
 
 .bottomArrow.green > path:nth-child(2) {
-   fill: #b31942;
+   fill: #f49820;
 }
 
 .circle {
@@ -97,7 +97,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #b31942;
+   background-color: #f49820;
 }
 .title {
    position: absolute;

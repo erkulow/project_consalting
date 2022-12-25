@@ -19,10 +19,10 @@ export const Background = () => {
             <InnerCentered>
                <h1>We advise for study abroad</h1>
                <p>
-                  AlmazAlmazAlmazAlmazAlmazAlmazAlmazAlmazAlmazA <br />
-                  lmazAlmazAlmazAlmazAlmazAlmazAlmazAlmazAlmaz <br />
-                  AlmazAlmazAlmazAlmazAlmaz
+                  We advise for study abroad. We advise for study abroad <br />
+                  We advise for study abroad.
                </p>
+
                <Button>Talk to a Consultant</Button>
             </InnerCentered>
          </Centered>
@@ -61,17 +61,19 @@ const Centered = styled.div`
    align-items: center;
 `
 const InnerCentered = styled.div`
-   display: 'flex';
+   display: block;
    text-align: center;
-
    h1 {
       font-family: 'Poppins';
       font-style: normal;
       font-weight: 700;
       font-size: 46px;
       line-height: 120%;
-      color: #ffffff;
+      color: #f49820;
       margin-bottom: 30px;
+      @media screen and (max-width: 560px) {
+         font-size: 32px;
+      }
    }
    p {
       font-family: 'Poppins';
@@ -81,5 +83,9 @@ const InnerCentered = styled.div`
       line-height: 150%;
       color: #ffffff;
       margin-bottom: 20px;
+      word-break: keep-all;
+      @media screen and (max-width: 560px) {
+         font-size: 16px;
+      }
    }
 `

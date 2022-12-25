@@ -3,12 +3,12 @@ import styles from './Circles.module.css'
 import { AnimatedContainer } from '../UI/AnimatedContainer'
 
 const CIRCLES = [
-   '#B31942',
-   '#B31942',
-   '#B31942',
-   '#B31942',
-   '#B31942',
-   '#B31942',
+   '#f49820',
+   '#f49820',
+   '#f49820',
+   '#f49820',
+   '#f49820',
+   '#f49820',
 ]
 
 export default function Circles() {

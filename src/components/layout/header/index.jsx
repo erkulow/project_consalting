@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import { Button } from '../../UI/Button'
+
 // import media from '../../../utils/helpers/media'
 
 export const Header = () => {
    return (
       <WrapperHeader>
          <Conatiner>
-            <h2>ALMAZ</h2>
+            <h2>EDUGO</h2>
             <WrapperLinks>
                <li>Home</li>
                <li>About</li>
@@ -15,6 +17,11 @@ export const Header = () => {
                <li>Portfolio</li>
             </WrapperLinks>
             <Button>Contacts Us</Button>
+            <GiHamburgerMenu
+               fontSize="25px"
+               style={{ display: 'block' }}
+               color="#284c6f"
+            />
          </Conatiner>
       </WrapperHeader>
    )
@@ -40,6 +47,14 @@ const Conatiner = styled.header`
    font-weight: 500;
    font-size: 16px;
    line-height: 24px;
+   h2 {
+      color: #284c6f;
+   }
+   button {
+      @media screen and (max-width: 560px) {
+         display: none;
+      }
+   }
 `
 
 const WrapperLinks = styled.ul`
@@ -49,8 +64,11 @@ const WrapperLinks = styled.ul`
    li {
       cursor: pointer;
       :hover {
-         color: #b31942;
+         color: #fc9023;
          transition: 0.2s;
       }
+   }
+   @media screen and (max-width: 560px) {
+      display: none;
    }
 `

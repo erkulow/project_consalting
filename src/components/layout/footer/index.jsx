@@ -1,12 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BsFillTelephoneFill, BsFillGeoAltFill } from 'react-icons/bs'
+import {
+   BsFillTelephoneFill,
+   BsFillGeoAltFill,
+   BsInstagram,
+   BsFacebook,
+} from 'react-icons/bs'
 import { HiOutlineMail } from 'react-icons/hi'
 
 export const Footer = () => {
    return (
       <Container>
          <InnerContainer>
+            <WrapperLogo>
+               <h1>EDUGO</h1>
+            </WrapperLogo>
             <WrapperLinks>
                <li>Home</li>
                <li>About</li>
@@ -16,35 +24,23 @@ export const Footer = () => {
             <WrapperInfo>
                <WrapperContacts>
                   <p>
-                     <span>
-                        <BsFillGeoAltFill fontSize={20} /> Adress:
-                     </span>
+                     <BsFillGeoAltFill fontSize={20} color="white" />
                      <a href="/"> Bishkek, Kayindy 129 (Bishkek Office)</a>
                   </p>
                   <p>
-                     <span>
-                        <BsFillTelephoneFill fontSize={20} /> Phone Number:
-                     </span>
+                     <BsFillTelephoneFill fontSize={20} color="white" />
                      <a href="/"> +996 550 75 55 95 (Bishkek Office)</a>
                   </p>
                   <p>
-                     <span>
-                        <HiOutlineMail fontSize={20} /> Email:
-                     </span>
-                     <a href="/"> erkulow26@gmial.com © </a>
+                     <HiOutlineMail fontSize={20} color="white" />
+                     <a href="/"> erkulow26@gmial.com</a>
                   </p>
                </WrapperContacts>
-               <WrapperLogo>
-                  <h1>ALMAZ</h1>
-               </WrapperLogo>
+               <WrapperIcons>
+                  <BsInstagram />
+                  <BsFacebook />
+               </WrapperIcons>
             </WrapperInfo>
-            <h5>
-               It was this company that inspired me to enter the States. Came to
-               them for a consultation, they explained everything to me clearly
-               and clearly. If you want to apply abroad, with this company you
-               will have a better chance of getting a visa, discounts, etc. Good
-               luck to all!
-            </h5>
          </InnerContainer>
       </Container>
    )
@@ -55,7 +51,7 @@ const Container = styled.div`
    display: flex;
    justify-content: center;
    margin-top: 120px;
-   background-color: #0a3161;
+   background-color: #214e7f;
 `
 const InnerContainer = styled.div`
    width: 93%;
@@ -89,9 +85,13 @@ const WrapperLinks = styled.ul`
    li {
       cursor: pointer;
       :hover {
-         color: #b31942;
+         color: #f49820;
          transition: 0.2s;
       }
+   }
+   @media screen and (max-width: 560px) {
+      flex-direction: column;
+      align-items: center;
    }
 `
 const WrapperInfo = styled.div`
@@ -106,19 +106,24 @@ const WrapperInfo = styled.div`
    display: flex;
    justify-content: space-between;
    align-items: center;
+   @media screen and (max-width: 600px) {
+      flex-direction: column-reverse;
+   }
 `
 const WrapperContacts = styled.div`
+   display: flex;
+   gap: 15px;
    p {
       margin-top: 10px;
       display: flex;
-      flex-direction: column;
       a {
          display: block;
          cursor: pointer;
          transition: 0.2s;
          color: #ffffff;
+         margin-left: 10px;
          :hover {
-            color: #b31942;
+            color: #f49820;
             transition: 0.2s;
          }
       }
@@ -127,7 +132,21 @@ const WrapperContacts = styled.div`
          align-items: center;
          gap: 8px;
       }
+      @media screen and (max-width: 600px) {
+         margin-top: 15px;
+      }
    }
+   @media screen and (max-width: 600px) {
+      flex-direction: column;
+   }
+`
+const WrapperIcons = styled.div`
+   display: flex;
+   gap: 15px;
+   font-size: 20px;
+   cursor: pointer;
+   color: white;
+   margin: 20px 0;
 `
 const WrapperLogo = styled.div`
    h1 {
