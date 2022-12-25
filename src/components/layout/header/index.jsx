@@ -41,7 +41,6 @@ const Conatiner = styled.header`
    display: flex;
    align-items: center;
    justify-content: space-between;
-   /* FONT */
    font-family: 'Poppins';
    font-style: normal;
    font-weight: 500;
